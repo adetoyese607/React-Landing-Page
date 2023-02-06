@@ -5,6 +5,7 @@ import {HiOutlineBars3} from "react-icons/hi2"
 import {
   Box,
   Drawer,
+  List,
   ListItem,
   ListItemButton,
   ListItemIcon,
@@ -60,6 +61,22 @@ const menuOptions =[
       <div className='navbar-menu-container'>
 <HiOutlineBars3 onClick={() => setOpenMenu(true)}/>
       </div>
+      <Drawer open={openMenu} onClose={() => setOpenMenu(true)}
+      anchor="right">
+        <Box 
+        sx={{width: 250}}
+        role="presentation"
+        onClick={() => setOpenMenu(false)}
+        onKeyDown ={() => setOpenMenu(false)}
+        >
+<List>
+  {menuOptions.map((item) =>(
+   
+  ))}
+</List>
+        </Box>
+
+      </Drawer>
     </nav>
 
   )
