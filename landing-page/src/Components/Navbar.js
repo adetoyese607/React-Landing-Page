@@ -61,7 +61,7 @@ const menuOptions =[
       <div className='navbar-menu-container'>
 <HiOutlineBars3 onClick={() => setOpenMenu(true)}/>
       </div>
-      <Drawer open={openMenu} onClose={() => setOpenMenu(false )}
+      {/* <Drawer open={openMenu} onClose={() => setOpenMenu(false )}
       anchor="right">
         <Box 
         sx={{width: 250}}
@@ -71,17 +71,17 @@ const menuOptions =[
         >
 <List>
   {menuOptions.map((item) =>(
-   <ListItem key={item.icon} disablePadding>
+   <ListItem key={item.text} disablePadding>
     <ListItemButton>
       <ListItemIcon>{item.icon}</ListItemIcon>
-      <ListItemText primary={item.text}></ListItemText>
+      <ListItemText primary={item.text} />
     </ListItemButton>
    </ListItem>
   ))}
 </List>
         </Box>
 
-      </Drawer>
+      </Drawer> */}
     </nav>
 
   )
