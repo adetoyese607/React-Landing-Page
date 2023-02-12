@@ -1,8 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
-import BannerBackground from "../Assets/download.jfif"
+// import BannerBackground from "../Assets/download.jfif"
 import {FiArrowRight} from "react-icons/fi";
-// import BannerImage from "../Assets/download.jfif"
+import Image from "../Assets/image.jpeg"
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
         <Navbar/>
         <div className='home-banner-container'>
         <div className='home-bannerImage-container'>
-          <img src={BannerBackground} alt=""/>
+          {/* <img src={BannerBackground} alt=""/> */}
         </div>
 <div className='home-text-section'>
   <h1 className='primary-heading'>
@@ -26,7 +26,7 @@ const Home = () => {
   </button>
 </div>
 <div className='home-image-container'>
-  <img src={image} alt
+  <img src={Image} alt= ''/>
 </div>
         </div>
     </div>
